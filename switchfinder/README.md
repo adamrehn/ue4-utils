@@ -2,7 +2,7 @@
 
 This Python script uses the [ack](https://beyondgrep.com/) code search tool to scan the UE4 source tree and discover all supported command-line switches. The script generates a HTML file containing the list of unique switches and the source locations from which they are referenced, with hyperlinks to the relevant lines on GitHub. This is handy for discovering interesting or obscure switches.
 
-Note that the script scans the entire source tree, which includes the code for **multiple tools**. Some of the switches will be supported by the Editor, others by UnrealFrontend, etc. Be sure to carefully read the path of the source files that reference a given switch to determine which tools support it.
+Note that the script scans the entire source tree, which includes the code for **multiple tools**. Some of the switches will be supported by the Editor, others by UnrealFrontend, UnrealPak, ShaderCompileWorker, etc. Be sure to carefully read the path of the source files that reference a given switch to determine which tools support it.
 
 The script has the following requirements:
 

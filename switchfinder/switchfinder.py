@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 import os, re, subprocess, sys
 
+# Retrieves the stripped stdout for a command
+def strippedStdout(command, cwd):
+	return subprocess.check_output(command, stderr=subprocess.STDOUT, universal_newlines=True, cwd=cwd).strip()
+
 # Check that the required arguments have been supplied
 if len(sys.argv) < 2:
 	print('Usage:')
@@ -12,12 +16,11 @@ if len(sys.argv) < 2:
 # If a root git repo directory was specified, use it
 rootDir = sys.argv[2] if len(sys.argv) > 2 else os.getcwd()
 
-# Use git to determine which branch is checked out
-branchName = subprocess.check_output(
-	['git', 'rev-parse', '--abbrev-ref', 'HEAD'],
-	universal_newlines=True,
-	cwd=rootDir
-).strip()
+# Use git to determine which tag or branch is checked out
+try:
+	branchName = strippedStdout(['git', 'describe', '--tags', '--exact-match'], rootDir)
+except:
+	branchName = strippedStdout(['git', 'rev-parse', '--abbrev-ref', 'HEAD'], rootDir)
 
 # Use ack to find each command line switch supported by UE4
 ack = subprocess.Popen(
