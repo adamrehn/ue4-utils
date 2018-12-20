@@ -1,6 +1,6 @@
 # UE4 Module Finder
 
-This Python script uses [ue4cli](https://github.com/adamrehn/ue4cli) to perform a gathering build of the `UE4Editor` target and then scans the generated files in the `Intermediate` directory to determine which source files are included in which modules. This is handy when you want to discover `.cpp` files that you are interested and determine which module to link against in order to use the types they define, or to verify that a given source file is indeed being included in the intended module and not being ignored by UBT as a result of failing to meet the module source file search criteria.
+This Python script uses [ue4cli](https://github.com/adamrehn/ue4cli) to perform a gathering build of the `UE4Editor` target and then scans the generated files in the `Intermediate` directory to determine which source files are included in which modules. This is handy when you want to discover `.cpp` files that you are interested in and determine which module to link against in order to use the types they define, or to verify that a given source file is indeed being included in the intended module and not being ignored by UBT as a result of failing to meet the module source file search criteria.
 
 - Python 3.5 or newer
 - The [ue4cli](https://github.com/adamrehn/ue4cli) Python package
