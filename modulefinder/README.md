@@ -4,7 +4,7 @@ This Python script uses [ue4cli](https://github.com/adamrehn/ue4cli) to perform 
 
 - Python 3.5 or newer
 - The [ue4cli](https://github.com/adamrehn/ue4cli) Python package
-- ue4cli needs to be pointed to the root of the UE4 source tree using the [ue4 setroot](https://adamrehn.com/docs/ue4cli/configuration-commands/setroot) command. An Installed Build will not provide the required information.
+- ue4cli needs to be pointed to the root of the UE4 source tree using the [ue4 setroot](https://docs.adamrehn.com/ue4cli/configuration-commands/setroot) command. An Installed Build will not provide the required information.
 
 To perform a search, simply specify the patterns or full filenames of the source files you are interested in. (Patterns are just substrings that filenames are matched against, not regular expressions or glob patterns.) You can specify as many patterns and/or filenames as you wish.
 
