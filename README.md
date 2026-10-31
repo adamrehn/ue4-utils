@@ -4,7 +4,8 @@ This repository contains a collection of assorted utilities for working with or 
 
 - [**adamrehn/ue4cli**](https://github.com/adamrehn/ue4cli) contains my automation-friendly, platform-agnostic command-line interface for UE4.
 - [**adamrehn/conan-ue4cli**](https://github.com/adamrehn/conan-ue4cli) contains the ue4cli plugin that generates and builds packages for my [Conan-based third-party library integration workflow](https://adamrehn.com/articles/cross-platform-library-integration-in-unreal-engine-4) for UE4.
-- [**adamrehn/ue4-docker**](https://github.com/adamrehn/ue4-docker) contains my Dockerfiles and build infrastructure for building Windows and Linux Docker containers for UE4.- [**adamrehn/UE4Capture**](https://github.com/adamrehn/UE4Capture) contains my plugin for performing in-Engine audio and video capture from inside NVIDIA Docker containers.
+- [**adamrehn/ue4-docker**](https://github.com/adamrehn/ue4-docker) contains my Dockerfiles and build infrastructure for building Windows and Linux Docker containers for UE4.
+- [**adamrehn/UE4Capture**](https://github.com/adamrehn/UE4Capture) contains my plugin for performing in-Engine audio and video capture from inside NVIDIA Docker containers.
 
 Each utility is contained in its own subdirectory. The utilities are:
 
